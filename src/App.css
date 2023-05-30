@@ -1,7 +1,11 @@
 .App {
   text-align: center;
+  background-color: #FFE66D;
 }
 
+.busqueda {
+  font-size: 16px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -15,7 +19,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,11 +32,32 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.caja {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.senador {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .caja {
+    display: flex;
+    flex-wrap: wrap;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .senador {
+    width: 30%;
+    padding: 15px;  
   }
+  
+  .partido {
+    background-color: black;
+    color: white;
+    padding: 5px;
+  }
+  
+
+
 }
